@@ -1,0 +1,135 @@
+@font-face{
+    font-family: myFont;
+    src: url(akira_expanded/Akira.otf);
+  }
+  
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: myFont, Arial;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url(images/background.webp);
+    background-size: cover;
+    background-position: center;
+} 
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+    margin-left: -50px;
+}
+
+.navbar {
+   width: 85%; 
+   margin: auto;
+   padding: 35px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.navbar ul li {
+   list-style: none;
+   display: inline-block;
+   margin: 0 20px; 
+   position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: rgb(255, 0, 123);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.2s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+
+
+.content {
+    width:100%;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-10%);
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 75px;
+}
+
+/*.content h1 {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+} */
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin:20px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    border:2px solid rgb(255, 0, 123);
+    background-color: rgb(255, 0, 123);
+    color: white;
+    cursor: pointer;
+    /*position: relative;
+    overflow: hidden;*/
+} 
+
+button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+button:active {
+    background-color: rgba(255, 0, 123, 0);
+}
+
+#bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: 40px;
+  }
+
+/*span {
+    background:rgb(255, 0, 123);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: ;
+    transition: 0.2s;
+}
+
+button:hover span {
+    width:100%;
+}
+
+button:hover {
+    border:none;
+}

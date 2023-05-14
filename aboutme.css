@@ -1,0 +1,85 @@
+@font-face{
+  font-family: myFont;
+  src: url(akira_expanded/Akira.otf);
+}
+
+@font-face{
+  font-family: myFont2;
+  src: url(nexa/Nexa-Heavy.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: myFont, Arial;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url(images/background.webp);
+  background-size: cover;
+  background-position: center;
+} 
+
+.logo {
+  width: 50px;
+  cursor: pointer;
+  margin-left: -50px;
+}
+
+.navbar {
+ width: 85%; 
+ margin: auto;
+ padding: 35px 0;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.navbar ul li {
+ list-style: none;
+ display: inline-block;
+ margin: 0 20px; 
+ position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 2px;
+  width: 0;
+  background: rgb(255, 0, 123);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.2s;
+}
+
+.navbar ul li:hover:after {
+  width: 100%;
+}
+
+.about-me{
+margin-top: 10%;
+margin-left: 10%;
+}
+
+.profile-picture{
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.myinfo {
+  display:inline-block;
+  color: white;
+  font-weight: bold;
+  font-family: myFont2;
+  margin-left: 50px;
+  font-size:20px;
+}
